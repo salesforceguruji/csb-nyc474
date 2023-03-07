@@ -21,9 +21,15 @@
     <!-- window.history.pushState('page2', 'Title', 'page2'); -->
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://gurudev.jagrutigurukul.org/assets/img/gurudev_logo.png"
+            width="150px"
+            height="50px"
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,7 +42,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav nav justify-content-end">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -53,7 +59,10 @@
         </div>
       </div>
     </nav>
-    <dashboard-component name="Ram"> </dashboard-component>
+    <c-dashboard> </c-dashboard>
+
+    <c-all-courses></c-all-courses>
+    <script src="allcourses.js"></script>
     <script src="dashboard.js"></script>
     <script src="footer.js"></script>
   </body>
